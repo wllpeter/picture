@@ -1,0 +1,53 @@
+@startuml
+title 统一配置中心-ER图
+
+entity "t_config_center" as config_center {
+  *id : bigint(20) <<generated>>
+  --
+    key_name : varchar 唯一key
+    value : TEXT value值
+    description : value 描述
+    create_user_id : int(11) 创建人: dffl_auth.t_users#id
+    create_user_name : varchar 创建人: dffl_auth.t_users#name 
+    update_user_id : int(11) 更新人: dffl_auth.t_users#id
+    update_user_name : varchar 更新人: dffl_auth.t_users#name 
+    created_at : datetime 创建时间
+    updated_at : datetime 更新时间
+}
+
+entity "t_config_center_history" as config_center_history {
+  *id : bigint(20) <<generated>>
+  --
+  *config_id : bigint(20) dffl_info_crm.t_config_center#id
+    value : TEXT value值
+    description : value 描述
+    create_user_id : int(11) 创建人: dffl_auth.t_users#id
+    create_user_name : varchar 创建人: dffl_auth.t_users#name 
+    update_user_id : int(11) 更新人: dffl_auth.t_users#id
+    update_user_name : varchar 更新人: dffl_auth.t_users#name 
+    created_at : datetime 创建时间
+    updated_at : datetime 更新时间
+}
+
+
+entity "t_config_center_use_data" as config_center_use_data {
+  *id : bigint(20) <<generated>>
+  --
+    key_name : varchar 唯一key
+    value : TEXT value值
+    is_match : int(4) 是否命中： 0 未命中 1 命中
+    created_at : datetime 创建时间
+}
+
+
+
+' config_center:config_center_history = 1:N
+config_center ||--|{ config_center_history
+
+
+' config_center:config_center_use_data = 1:N
+config_center ||--|{ config_center_use_data
+
+
+@enduml
+

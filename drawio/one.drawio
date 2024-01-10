@@ -4,20 +4,25 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="6" value="统一配置中心服务" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
-                    <mxGeometry x="145" y="400" width="120" height="60" as="geometry"/>
+                <mxCell id="9" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="205" y="210" as="sourcePoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="9" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7" target="8">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="12" value="&lt;h2&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;方案组配置现状&lt;/font&gt;&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;comic=3;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="130" width="440" height="280" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="统一配置中心-前端页面" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
-                    <mxGeometry x="140" y="150" width="130" height="60" as="geometry"/>
+                <mxCell id="13" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Apollo配置&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="160" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="6">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="14" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;java应用数据库配置表&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="310" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="网关服务" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
-                    <mxGeometry x="145" y="270" width="120" height="60" as="geometry"/>
+                <mxCell id="15" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;PHP应用数据库配置表&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;PHP应用服务器env&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="160" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

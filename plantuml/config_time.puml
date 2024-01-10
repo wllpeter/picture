@@ -1,0 +1,50 @@
+@startuml "统一配置中心"
+
+actor 产研 as developer
+participant 统一配置中心页面 as configfront
+participant CRM网关 as crmgateway
+participant 其他后台服务 as otherserver
+participant 统一配置中心服务层 as configserver
+database "配置中心MySQL" as configdb
+database "配置中心Redis" as configredis
+
+
+
+
+autonumber
+== 更新配置数据 ==
+developer -> configfront: 更新配置
+activate configfront
+configfront -> crmgateway: 更新
+activate crmgateway
+crmgateway -> configserver: 更新
+activate configserver
+configserver -> configdb: 更新数据库
+activate configdb
+configdb -> configserver: 更新成功
+deactivate configdb
+configserver -> configredis: 更新缓存
+activate configredis
+configredis -> configserver: 更新成功
+deactivate configredis
+configserver -> crmgateway: 更新成功
+deactivate configserver
+crmgateway -> configfront: 更新成功
+deactivate crmgateway
+deactivate configfront
+autonumber stop
+
+
+autonumber
+== 查询配置数据 ==
+otherserver -> configserver: 查询配置
+activate configserver
+configserver -> configredis: 查询缓存
+activate configredis
+configredis -> configserver: 缓存有值
+configserver -> otherserver: 返回配置
+deactivate configredis
+deactivate configserver
+autonumber stop
+
+@enduml
