@@ -1,0 +1,56 @@
+@startuml
+!include https://gitee.com/chiang_zg/C4-PlantUML/raw/master/C4_Container.puml
+!include https://gitee.com/chiang_zg/C4-PlantUML/raw/master/C4_Component.puml
+
+title "方案中心系统架构"
+
+Person(sale, "销售", "下单")
+Person(developer, "产研", "配置")
+
+
+System_Boundary(front, "方案中心展示层"){
+  Container(configcenterfront, "统一配置中心前端", "H5", "dffl-crm-config-center-ui")
+  Container(admincrmfront, "CRM门户", "H5", "dffl-admin-crm")
+}
+
+System_Boundary(bff, "方案中心bff"){
+  Container(crmbff, "网关服务", "java", "app-crm-backend")
+}
+
+System_Boundary(server, "方案中心服务层"){
+  Container(configbackendserver, "统一配置中心后台服务", "java", "crm-config-center-backend")
+  Container(configserviceserver, "统一配置中心查询服务", "java", "crm-config-center-service")
+  Container(crmserver, "CRM服务", "java", "bs-crm")
+  Container(planserver, "方案下单", "java", "crm-sales-plan-service")
+  Container(oaphpserver, "OA PHP服务", "php", "app-oa")
+  Container(oaserver, "OA服务", "java", "bs-oa")
+  ContainerDb(configcenterdb, "配置中心", "MySQL", "统一配置数据")
+  ContainerDb(crmdb, "CRM数据库", "MySQL", "crm数据")
+  ContainerDb(plandb, "方案数据库", "MySQL", "方案数据")
+  ContainerDb(configcenterredis, "统一配置Redis", "REDIS", "统一配置Redis")
+}
+
+Rel(sale, admincrmfront, "访问", "浏览器")
+Rel(developer, configcenterfront, "访问", "浏览器")
+
+Rel(admincrmfront, crmbff, "调用", "FEIGN")
+Rel(configcenterfront, crmbff, "调用", "FEIGN")
+
+Rel(crmbff, configbackendserver, "调用", "FEIGN")
+Rel(crmbff, crmserver, "调用", "FEIGN")
+Rel(crmbff, planserver, "调用", "FEIGN")
+
+Rel(crmserver, crmdb, "访问", "http")
+Rel(planserver, plandb, "访问", "http")
+
+Rel(configbackendserver, configcenterdb, "更新配置", "http")
+Rel(configbackendserver, configcenterredis, "更新缓存", "http")
+
+Rel(crmserver, configserviceserver, "访问", "FEIGN")
+Rel(planserver, configserviceserver, "访问", "FEIGN")
+Rel(oaserver, configserviceserver, "访问", "FEIGN")
+Rel(oaphpserver, configserviceserver, "访问", "FEIGN")
+Rel(configserviceserver, configcenterredis, "查询缓存", "http")
+
+SHOW_LEGEND()
+@enduml
