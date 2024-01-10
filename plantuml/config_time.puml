@@ -46,5 +46,21 @@ configserver -> otherserver: 返回配置
 deactivate configredis
 deactivate configserver
 autonumber stop
+alt 缓存异常
+  autonumber
+  configserver -> configdb:查询MySQL
+  activate configserver
+  activate configdb
+  configdb -> configserver:返回配置
+  configserver -> configredis:异步设置缓存
+  deactivate configdb
+  activate configredis
+  configredis -> configserver:返回
+  deactivate configredis
+  configserver -> otherserver: 返回配置
+  deactivate configserver
+end
+autonumber stop
+
 
 @enduml
