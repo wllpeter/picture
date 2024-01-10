@@ -11,6 +11,10 @@ Person(developer, "产研", "配置")
 System_Boundary(front, "方案中心展示层"){
   Container(configcenterfront, "统一配置中心前端", "H5", "dffl-crm-config-center-ui")
   Container(admincrmfront, "CRM门户", "H5", "dffl-admin-crm")
+  Container(oafront, "OA系统", "H5", "app-oa-ui")
+  Container(adminfront, "Admin系统", "H5", "app-admin-ui")
+  Container(rightfront, "权益合规", "H5", "front-rightcenter-ui")
+  Container(servicefeefront, "服务费管理", "H5", "service-fee-ui")
 }
 
 System_Boundary(bff, "方案中心bff"){
@@ -27,6 +31,7 @@ System_Boundary(server, "方案中心服务层"){
   Container(salepolicyserver, "销售政策", "Java", "dffl-sale-policy")
   Component(rightcenterserver, "权益中心", "Java", "front-rightcenter-api")
   Component(cardserver, "卡服务", "Java", "bl-card-service")
+  Component(servicefeeserver, "服务费", "Java", "服务费设置、服务费查询")
   ContainerDb(configcenterdb, "配置中心", "MySQL", "统一配置数据")
   ContainerDb(crmdb, "CRM数据库", "MySQL", "crm数据")
   ContainerDb(plandb, "方案数据库", "MySQL", "方案数据")
@@ -35,6 +40,10 @@ System_Boundary(server, "方案中心服务层"){
 
 Rel(sale, admincrmfront, "访问", "浏览器")
 Rel(developer, configcenterfront, "访问", "浏览器")
+Rel(adminfront, cardserver, "访问", "浏览器")
+Rel(rightfront, rightcenterserver, "访问", "浏览器")
+Rel(servicefeefront, servicefeeserver, "访问", "浏览器")
+Rel(oafront, oaphpserver, "访问", "浏览器")
 
 Rel(admincrmfront, crmbff, "调用", "FEIGN")
 Rel(configcenterfront, crmbff, "调用", "FEIGN")
