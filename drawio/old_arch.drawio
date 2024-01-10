@@ -1,0 +1,108 @@
+<mxfile host="65bd71144e">
+    <diagram id="JJm6VJcXKFNIuCCy-bZ_" name="Page-1">
+        <mxGraphModel dx="1071" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;现状配置架构&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;comic=4;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="210" width="690" height="380" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;comic=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;comic=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="4" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;bs-oa（java）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="270" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;OA数据库&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="450" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;crm数据库&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="450" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=none;comic=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.145;entryY=0;entryDx=0;entryDy=4.35;entryPerimeter=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="9" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;comic=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="9" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;bs-crm（java）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="270" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;comic=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.717;entryY=0.038;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="10" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=none;comic=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="10" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;crm-sales-plan-service（java）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="270" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="env" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;comic=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="460" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;fontFamily=Comic Sans MS;Comic=1;comic=1;" edge="1" parent="1" source="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="460" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;comic=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="13" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;app-oa（php）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="270" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Apollo" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;comic=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="450" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;新的配置架构&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;comic=4;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="710" width="690" height="380" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=none;comic=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="36" target="50">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;bs-oa（java）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="770" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;配置中心数据库&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="990" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;配置中心redis&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="990" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=none;comic=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="41" target="50">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;bs-crm（java）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="770" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" style="edgeStyle=none;comic=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="44" target="50">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;crm-sales-plan-service（java）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="770" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=none;comic=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="48" target="50">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;app-oa（php）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="770" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=none;comic=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="50" target="37">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=none;comic=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;fontFamily=Comic Sans MS;" edge="1" parent="1" source="50" target="38">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;配置中心服务（java）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="930" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="转变" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;comic=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="600" width="60" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
