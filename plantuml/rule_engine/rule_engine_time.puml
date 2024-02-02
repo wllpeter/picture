@@ -1,0 +1,82 @@
+@startuml "统一配置中心"
+
+actor 规则引擎管理员 as rule_user
+actor 销售 as sale
+participant 规则引擎管理页面 as rule_engine_front
+participant 方案单页面 as dffl_crm_admin
+participant CRM网关 as crmgateway
+participant 规则引擎管理服务 as rule_engine_backend
+participant 方案下单服务 as crm_sales_plan_service
+participant 规则引擎前置服务 as rule_engine_risk
+participant 规则引擎 as rule_engine
+database "规则引擎MySQL" as rule_engine_db
+database "规则引擎Redis" as rule_engine_redis
+
+
+
+
+autonumber
+== 更新规则引擎数据 ==
+rule_user -> rule_engine_front: 配置规则引擎
+activate rule_engine_front
+rule_engine_front -> crmgateway: 更新
+activate crmgateway
+crmgateway -> rule_engine_backend: 更新
+activate rule_engine_backend
+rule_engine_backend -> rule_engine_db: 更新数据库
+activate rule_engine_db
+rule_engine_db -> rule_engine_backend: 更新Mysql成功
+deactivate rule_engine_db
+rule_engine_backend -> rule_engine_redis: 更新Redis
+activate rule_engine_redis
+rule_engine_redis -> rule_engine_backend: 更新Redis成功
+deactivate rule_engine_redis
+deactivate rule_engine_db
+rule_engine_backend -> crmgateway: 更新Redis成功
+deactivate rule_engine_backend
+crmgateway -> rule_engine_front: 更新成功
+rule_engine_front -> rule_user: 配置成功
+deactivate crmgateway
+deactivate rule_engine_front
+autonumber stop
+
+
+autonumber
+== 销售下单 ==
+sale -> dffl_crm_admin : 下单
+activate dffl_crm_admin
+dffl_crm_admin -> crmgateway: 访问
+activate crmgateway
+crmgateway -> crm_sales_plan_service: 保存
+activate crm_sales_plan_service
+crm_sales_plan_service -> crmgateway: 保存成功
+deactivate crm_sales_plan_service
+crmgateway -> dffl_crm_admin: 返回
+dffl_crm_admin -> sale: 返回
+deactivate dffl_crm_admin
+deactivate crmgateway
+deactivate rule_engine_front
+autonumber stop
+
+== 触发规则引擎 ==
+autonumber
+activate crm_sales_plan_service
+crm_sales_plan_service -> rule_engine_risk: 访问规则引擎前置服务
+activate rule_engine_risk
+rule_engine_risk -> rule_engine: 匹配规则
+activate rule_engine
+rule_engine -> rule_engine_redis: 查询规则缓存
+activate rule_engine_redis
+rule_engine_redis -> rule_engine: 返回
+deactivate rule_engine_redis
+rule_engine -> rule_engine: 匹配规则
+rule_engine -> rule_engine_risk: 返回触发的规则
+deactivate rule_engine
+rule_engine_risk -> rule_engine_risk: 封装业务返回数据
+rule_engine_risk -> crm_sales_plan_service: 返回规则引擎结果
+crm_sales_plan_service -> crm_sales_plan_service: 更新业务数据
+deactivate rule_engine_risk
+autonumber stop
+
+
+@enduml
