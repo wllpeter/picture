@@ -1,0 +1,72 @@
+@startuml
+!include https://gitee.com/chiang_zg/C4-PlantUML/raw/master/C4_Container.puml
+!include https://gitee.com/chiang_zg/C4-PlantUML/raw/master/C4_Component.puml
+
+title "方案中心-规则引擎架构"
+
+Person(sale, "销售", "下单")
+Person(rule_user, "规则引擎管理员", "配置")
+
+
+System_Boundary(front, "方案中心展示层"){
+  Container(rule_front, "规则引擎前端", "H5", "dffl-crm-rule-backend")
+  Container(admin_crm_front, "CRM门户", "H5", "dffl-admin-crm")
+  Container(app_oa_front, "OA下单", "php", "app-oa")
+}
+
+System_Boundary(bff, "方案中心bff"){
+  Container(crmbff, "网关服务", "Java", "app-crm-backend")
+}
+
+System_Boundary(server, "方案中心服务层"){
+  Container(crm_sales_plan_service, "方案下单", "Java", "crm-sales-plan-service")
+  Container(app_oa, "OA下单", "php", "app-oa")
+  Container(crm_rule_backend, "规则引擎管理端服务", "Java", "crm-rule-backend")
+  Container(crm_rule_engine_risk, "规则引擎前置服务", "Java", "crm-rule-engine-risk")
+  Container(crm_rule_engine, "规则引擎", "Java", "crm-rule-engine")
+  ContainerDb(rule_engine_db, "规则引擎", "MySQL", "规则引擎数据")
+  ContainerDb(plandb, "方案数据库", "MySQL", "方案数据")
+  ContainerDb(oadb, "OA数据库", "MySQL", "OA数据")
+  ContainerDb(rule_engine_redis, "规则引擎Redis", "REDIS", "规则引擎Redis")
+}
+
+' 前端访问网关服务
+Rel(sale, admin_crm_front, "访问", "浏览器")
+Rel(rule_user, rule_front, "访问", "浏览器")
+Rel(sale, app_oa_front, "访问", "浏览器")
+
+' 网关访问bff
+Rel(rule_front, crmbff, "调用", "FEIGN")
+Rel(admin_crm_front, crmbff, "调用", "FEIGN")
+Rel(app_oa_front, app_oa, "访问", "浏览器")
+
+' bff访问服务端
+Rel(crmbff, crm_sales_plan_service, "调用", "FEIGN")
+Rel(crmbff, crm_rule_backend, "管理规则", "FEIGN")
+
+' 业务服务端访问规则引擎前置服务
+Rel(app_oa, crm_rule_engine_risk, "调用", "FEIGN")
+Rel(crm_sales_plan_service, crm_rule_engine_risk, "调用", "FEIGN")
+
+' 规则引擎前置服务访问规则引擎
+Rel(crm_rule_engine_risk, crm_rule_engine, "调用", "FEIGN")
+
+
+' 方案服务访问MySQL
+Rel(crm_sales_plan_service, plandb, "访问", "http")
+
+
+' OA服务访问MySQL
+Rel(app_oa, oadb, "访问", "http")
+
+' 规则引擎服务访问MySQL
+Rel(crm_rule_backend, rule_engine_db, "访问", "http")
+Rel(crm_rule_engine_risk, rule_engine_db, "访问", "http")
+Rel(crm_rule_engine, rule_engine_db, "访问", "http")
+
+' 规则引擎服务访问Redis
+Rel(crm_rule_backend, rule_engine_redis, "访问", "http")
+Rel(crm_rule_engine, rule_engine_redis, "访问", "http")
+
+SHOW_LEGEND()
+@enduml
