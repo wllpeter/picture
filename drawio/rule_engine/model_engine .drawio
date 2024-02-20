@@ -4,7 +4,7 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="规则包" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                <mxCell id="2" value="规则包&amp;nbsp;&amp;nbsp;packages" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
                     <mxGeometry x="30" y="-10" width="180" height="182" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="id&amp;nbsp; 规则包ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="2" vertex="1">
@@ -25,8 +25,8 @@
                 <mxCell id="12" value="end_time 规则生效结束时间" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="2" vertex="1">
                     <mxGeometry y="156" width="180" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="规则" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-                    <mxGeometry x="580" y="-64" width="380" height="364" as="geometry"/>
+                <mxCell id="13" value="规则&amp;nbsp;&amp;nbsp;rules" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="-64" width="380" height="390" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="id&amp;nbsp; 规则ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="26" width="380" height="26" as="geometry"/>
@@ -40,34 +40,37 @@
                 <mxCell id="17" value="rule_code&amp;nbsp;&amp;nbsp;规则编码" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="104" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="56" value="rule_name&amp;nbsp; 规则名称" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
+                <mxCell id="56" value="rule_name&amp;nbsp; 规则名称" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="130" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="57" value="rule_type&amp;nbsp; &amp;nbsp;规则类型: cal 计算规则 biz&amp;nbsp;配置型业务规则" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
+                <mxCell id="57" value="rule_type&amp;nbsp; &amp;nbsp;规则类型: cal 计算规则 biz&amp;nbsp;配置型业务规则" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="156" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="58" value="dialect&amp;nbsp; &amp;nbsp;drools dialect&amp;nbsp; &amp;nbsp;默认&amp;nbsp;mvel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
+                <mxCell id="58" value="dialect&amp;nbsp; &amp;nbsp;drools dialect&amp;nbsp; &amp;nbsp;默认&amp;nbsp;mvel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="182" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="59" value="when_clause&amp;nbsp; &amp;nbsp;保存规则条件内容" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
+                <mxCell id="89" value="salience&amp;nbsp; 规则优先级，数值越大越优先执行" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
                     <mxGeometry y="208" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="60" value="then_clause&amp;nbsp; &amp;nbsp;保存规则执行内容" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
+                <mxCell id="59" value="when_clause&amp;nbsp; &amp;nbsp;保存规则条件内容" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="234" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="61" value="version&amp;nbsp; &amp;nbsp; &amp;nbsp; 规则版本号，起始版本为1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
+                <mxCell id="60" value="then_clause&amp;nbsp; &amp;nbsp;保存规则执行内容" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="260" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="62" value="weight&amp;nbsp; &amp;nbsp;权重" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
+                <mxCell id="61" value="version&amp;nbsp; &amp;nbsp; &amp;nbsp; 规则版本号，起始版本为1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="286" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="63" value="score&amp;nbsp; &amp;nbsp;&amp;nbsp;规则设计的分值" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
+                <mxCell id="62" value="weight&amp;nbsp; &amp;nbsp;权重" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="312" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="64" value="rule_status&amp;nbsp; &amp;nbsp;规则状态" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="13">
+                <mxCell id="63" value="score&amp;nbsp; &amp;nbsp;&amp;nbsp;规则设计的分值" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
                     <mxGeometry y="338" width="380" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="条件" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                <mxCell id="64" value="rule_status&amp;nbsp; &amp;nbsp;规则状态" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="13" vertex="1">
+                    <mxGeometry y="364" width="380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="条件&amp;nbsp; &amp;nbsp;condition" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
                     <mxGeometry x="80" y="530" width="210" height="182" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="id&amp;nbsp; 条件ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="21" vertex="1">
@@ -79,73 +82,79 @@
                 <mxCell id="24" value="expression 条件表达式" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="21" vertex="1">
                     <mxGeometry y="78" width="210" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="content&amp;nbsp; 具体内容" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="21" vertex="1">
+                <mxCell id="38" value="logic&amp;nbsp; 具体内容" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="21" vertex="1">
                     <mxGeometry y="104" width="210" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="39" value="remark&amp;nbsp; 备注" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="21" vertex="1">
                     <mxGeometry y="130" width="210" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="65" value="cond_status 条件状态" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="21">
+                <mxCell id="65" value="cond_status 条件状态" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="21" vertex="1">
                     <mxGeometry y="156" width="210" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="66" value="条件参数" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-                    <mxGeometry x="510" y="530" width="370" height="146" as="geometry"/>
+                <mxCell id="66" value="条件参数&amp;nbsp; &amp;nbsp;&amp;nbsp;cond_param" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="530" width="360" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="67" value="cond_id&amp;nbsp; 条件ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="66">
-                    <mxGeometry y="26" width="370" height="26" as="geometry"/>
+                <mxCell id="67" value="cond_id&amp;nbsp; 条件ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="66" vertex="1">
+                    <mxGeometry y="26" width="360" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="68" value="name&amp;nbsp; 参数名称" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="66">
-                    <mxGeometry y="52" width="370" height="26" as="geometry"/>
+                <mxCell id="68" value="name&amp;nbsp; 参数名称" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="66" vertex="1">
+                    <mxGeometry y="52" width="360" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="69" value="type&amp;nbsp; 参数类型：list、String、Boolean、number、对象" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="66">
-                    <mxGeometry y="78" width="370" height="26" as="geometry"/>
+                <mxCell id="69" value="type&amp;nbsp; 参数类型：list、String、Boolean、number、对象" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="66" vertex="1">
+                    <mxGeometry y="78" width="360" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="70" value="nullable&amp;nbsp; 是否可以为空 1：是&amp;nbsp; &amp;nbsp;0 ： 否" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="66">
-                    <mxGeometry y="104" width="370" height="42" as="geometry"/>
+                <mxCell id="70" value="nullable&amp;nbsp; 是否可以为空 1：是&amp;nbsp; &amp;nbsp;0 ： 否" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="66" vertex="1">
+                    <mxGeometry y="104" width="360" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="84" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.6;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="73" target="21">
+                <mxCell id="90" value="default_value&amp;nbsp; 默认值" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="66">
+                    <mxGeometry y="130" width="360" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.6;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" parent="1" source="73" target="21" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="85" value="N：1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;" vertex="1" connectable="0" parent="84">
+                <mxCell id="85" value="N：1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;" parent="84" vertex="1" connectable="0">
                     <mxGeometry x="-0.2183" y="4" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="73" value="规则条件关联表" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="73" value="规则条件关联表&amp;nbsp;&amp;nbsp;rule_cond_map" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
                     <mxGeometry y="220" width="410" height="182" as="geometry"/>
                 </mxCell>
-                <mxCell id="74" value="rule_id&amp;nbsp; 规则ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="73">
+                <mxCell id="74" value="rule_id&amp;nbsp; 规则ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="73" vertex="1">
                     <mxGeometry y="26" width="410" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="75" value="cond_id&amp;nbsp; 条件ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="73">
+                <mxCell id="75" value="cond_id&amp;nbsp; 条件ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="73" vertex="1">
                     <mxGeometry y="52" width="410" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="76" value="param_value 参数值" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="73">
+                <mxCell id="76" value="param_value 参数值" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="73" vertex="1">
                     <mxGeometry y="78" width="410" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="77" value="param_name&amp;nbsp; 参数名称" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="73">
+                <mxCell id="77" value="param_name&amp;nbsp; 参数名称" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="73" vertex="1">
                     <mxGeometry y="104" width="410" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="78" value="param_type&amp;nbsp; 参数类型：list、String、Boolean、number、对象" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="73">
+                <mxCell id="78" value="param_type&amp;nbsp; 参数类型：list、String、Boolean、number、对象" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="73" vertex="1">
                     <mxGeometry y="130" width="410" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="79" value="remark&amp;nbsp; 备注" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="73">
+                <mxCell id="79" value="remark&amp;nbsp; 备注" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="73" vertex="1">
                     <mxGeometry y="156" width="410" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="83" value="N：1" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="62">
+                <mxCell id="83" value="N：1" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" parent="1" source="62" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="420" y="235" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="440" y="270"/>
+                        </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="86" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="9" target="56">
+                <mxCell id="86" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" parent="1" source="9" target="56" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="87" value="1：N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;" vertex="1" connectable="0" parent="86">
+                <mxCell id="87" value="1：N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;" parent="86" vertex="1" connectable="0">
                     <mxGeometry x="-0.1243" y="1" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="88" value="1：N" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="24" target="69">
+                <mxCell id="88" value="1：N" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" parent="1" source="24" target="69" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
